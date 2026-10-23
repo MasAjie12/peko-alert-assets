@@ -1,0 +1,15 @@
+/* PEKO MEDIASHARE — OBS Custom CSS */
+body{background:transparent!important;margin:0!important;overflow:hidden!important;font-family:Arial Black,Impact,'Trebuchet MS',sans-serif!important}
+#ms_container,.wrapper,.wrapper.style1.video{background:transparent!important;border:none!important;box-shadow:none!important;text-align:center!important;max-width:100%!important}
+#ms_container .style-1.text-container{background:linear-gradient(transparent,rgba(16,5,31,.94))!important;border:none!important}
+#ms_container .title{display:flex!important;align-items:center!important;justify-content:center!important;flex-wrap:wrap!important;gap:10px!important}
+#ms_container #sender{color:#fff!important;font-size:32px!important;font-weight:900!important;text-shadow:3px 3px 0 #10051f,0 0 14px #ff2bd6!important}
+#ms_container .dari{color:#ffe02d!important;font-size:0!important;width:38px!important;height:38px!important}
+#ms_container .dari::after{content:'✦'!important;color:#ffe02d!important;font-size:32px!important;text-shadow:0 0 14px #ff2bd6!important;animation:pek-ms-star 2.2s ease-in-out infinite!important}
+#ms_container #nominal{color:#00d5ff!important;font-size:34px!important;font-weight:900!important;text-shadow:0 0 18px #00d5ff,2px 2px 0 #10051f!important}
+#ms_container #message,#ms_container .message{color:#fff4fc!important;font-size:18px!important;font-style:italic!important;text-shadow:0 2px 4px #10051f,0 0 8px #ff2bd6!important}
+#ms_container #message:empty,#ms_container .message:empty{display:none!important}
+#loadingbar,.loadingbar{width:min(460px,80%)!important;height:6px!important;margin:12px auto 0!important;background:transparent!important}
+.loadingbar svg path:first-child{stroke:rgba(255,43,214,.28)!important}.loadingbar svg path:last-child{stroke:#00d5ff!important;filter:drop-shadow(0 0 6px #00d5ff)!important}
+@keyframes pek-ms-star{0%,100%{transform:scale(.8) rotate(0)}50%{transform:scale(1.2) rotate(18deg)}}
+html,body{width:100%!important;height:100%!important}#ms_container,.wrapper,.wrapper.style1.video{position:relative!important;width:100%!important;padding:0!important;overflow:hidden!important} .media-container{position:relative!important;display:block!important;width:100%!important;height:auto!important;overflow:visible!important;background:#10051f!important}.media-container iframe,.media-container video,.media-container canvas,.media-container img{display:block!important;width:100%!important;height:min(48vh,420px)!important;min-height:1px!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;filter:none!important}.style-1.text-container{position:relative!important;z-index:5!important;width:100%!important;margin:0!important;padding:12px 12px 18px!important}.wrapper.hide{opacity:0!important;visibility:hidden!important}

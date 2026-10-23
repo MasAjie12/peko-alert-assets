@@ -1,0 +1,34 @@
+/* PEKO ALERT — field CSS. Paste with alert HTML. */
+.pek-wrap{position:relative;display:flex;align-items:center;justify-content:center;width:100%;min-height:230px;padding:24px 10px;box-sizing:border-box;font-family:Arial Black,Impact,'Trebuchet MS',sans-serif}
+.pek-card{position:relative;isolation:isolate;width:760px;min-height:220px;box-sizing:border-box;overflow:hidden;border:3px solid #ff2bd6;border-radius:24px;background:#10082c;color:#fff;box-shadow:0 0 0 4px #10051f,0 0 26px rgba(255,43,214,.72),0 0 58px rgba(0,213,255,.36);animation:pek-in .7s cubic-bezier(.2,.9,.3,1.2) both,pek-glow 3.8s ease-in-out .7s infinite}
+.pek-bg{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(.48) saturate(1.18);animation:pek-zoom 18s ease-in-out infinite alternate;pointer-events:none}
+.pek-dim{position:absolute;z-index:1;inset:0;background:linear-gradient(105deg,rgba(10,3,30,.78),rgba(35,5,68,.48) 48%,rgba(10,3,30,.8))}
+.pek-vignette{position:absolute;z-index:2;inset:0;background:radial-gradient(ellipse at center,transparent 25%,rgba(4,1,17,.62) 100%);pointer-events:none}
+.pek-scan{position:absolute;z-index:6;top:0;left:-30%;width:30%;height:3px;background:linear-gradient(90deg,transparent,#ffe02d,#fff,transparent);box-shadow:0 0 16px #ffe02d;animation:pek-scan 3.6s linear infinite;pointer-events:none}
+.pek-bolt{position:absolute;z-index:4;width:92px;height:10px;background:#ffe02d;border:3px solid #10051f;box-shadow:4px 4px 0 #ff2bd6,0 0 14px rgba(255,224,45,.7);transform:rotate(-24deg);animation:pek-bolt 2.8s ease-in-out infinite}
+.pek-bolt-a{top:20px;left:23%}
+.pek-bolt-b{right:23%;bottom:22px;transform:rotate(156deg);animation-delay:-1.4s}
+.pek-star{position:absolute;z-index:5;color:#ffe02d;font-size:30px;line-height:1;text-shadow:2px 2px 0 #10051f,0 0 14px #ff2bd6;animation:pek-star 2.2s ease-in-out infinite}
+.pek-star-a{top:18px;right:15%}
+.pek-star-b{bottom:18px;left:16%;animation-delay:-1.1s}
+.pek-decor{position:absolute;z-index:4;width:150px;height:165px;object-fit:contain;filter:drop-shadow(0 0 7px rgba(255,43,214,.9)) drop-shadow(0 0 15px rgba(0,213,255,.42));pointer-events:none;animation:pek-float 4.8s ease-in-out infinite}
+.pek-left{left:-4px;bottom:-8px}
+.pek-right{right:-5px;bottom:-14px;animation-delay:-2.4s}
+.pek-content{position:relative;z-index:7;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:220px;box-sizing:border-box;padding:28px 170px 26px;text-align:center}
+.pek-kicker{color:#ffe02d;font-size:14px;letter-spacing:4px;text-shadow:2px 2px 0 #10051f,0 0 12px #ff2bd6;animation:pek-rise .6s .12s both}
+.pek-amount{margin-top:2px;color:#fff;font-size:48px;line-height:1.05;letter-spacing:1px;text-shadow:3px 3px 0 #10051f,0 0 14px #ff2bd6,0 0 26px #00d5ff;animation:pek-rise .65s .2s both}
+.pek-from{max-width:100%;margin-top:4px;color:#ffd6f7;font-family:'Trebuchet MS',Arial,sans-serif;font-size:14px;font-weight:800;letter-spacing:2px;text-transform:uppercase;text-shadow:0 2px 3px #10051f;animation:pek-rise .6s .28s both}
+.pek-supporter{max-width:100%;margin-top:8px;overflow:hidden;color:#fff;font-size:32px;line-height:1.1;text-overflow:ellipsis;white-space:nowrap;text-shadow:3px 3px 0 #10051f,0 0 12px #ff2bd6;animation:pek-rise .65s .36s both}
+.pek-divider{width:170px;height:3px;margin:11px 0 8px;background:linear-gradient(90deg,transparent,#00d5ff,#ffe02d,#ff2bd6,transparent);box-shadow:0 0 10px #00d5ff;animation:pek-divider 1.2s .5s both}
+.pek-message{max-width:100%;color:#fff4fc;font-family:'Trebuchet MS',Arial,sans-serif;font-size:18px;line-height:1.3;word-wrap:break-word;text-shadow:0 2px 4px #10051f;animation:pek-rise .65s .5s both}
+.pek-message:empty{display:none}
+@keyframes pek-in{from{opacity:0;transform:translateY(24px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes pek-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pek-zoom{from{transform:scale(1)}to{transform:scale(1.18)}}
+@keyframes pek-glow{0%,100%{box-shadow:0 0 0 4px #10051f,0 0 24px rgba(255,43,214,.62),0 0 48px rgba(0,213,255,.3)}50%{box-shadow:0 0 0 4px #10051f,0 0 38px rgba(255,43,214,.9),0 0 72px rgba(0,213,255,.48)}}
+@keyframes pek-scan{from{transform:translateX(0)}to{transform:translateX(440%)}}
+@keyframes pek-float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+@keyframes pek-bolt{0%,100%{opacity:.75;filter:brightness(1)}50%{opacity:1;filter:brightness(1.35)}}
+@keyframes pek-star{0%,100%{transform:scale(.8) rotate(0);opacity:.7}50%{transform:scale(1.2) rotate(18deg);opacity:1}}
+@keyframes pek-divider{from{width:0;opacity:0}to{width:170px;opacity:1}}
+@media (max-width:620px){.pek-wrap{min-height:190px;padding:18px 5px}.pek-card{min-height:190px;border-radius:18px}.pek-content{min-height:190px;padding:24px 92px 22px}.pek-decor{width:92px;height:112px}.pek-amount{font-size:34px}.pek-supporter{font-size:24px}.pek-message{font-size:15px}.pek-kicker{font-size:10px;letter-spacing:2px}.pek-bolt{width:56px;height:7px}.pek-star{font-size:22px}}

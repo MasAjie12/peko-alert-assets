@@ -1,0 +1,19 @@
+/* PEKO MILE — paste into widget CSS */
+body{background:transparent!important;margin:0!important;overflow:hidden!important;font-family:Arial Black,Impact,'Trebuchet MS',sans-serif!important}
+.w-mile .card{background-image:linear-gradient(rgba(13,3,35,.78),rgba(30,4,62,.88)),url("https://raw.githubusercontent.com/MasAjie12/peko-alert-assets/main/peko.png"),url("https://raw.githubusercontent.com/MasAjie12/peko-alert-assets/main/kiri.png"),url("https://raw.githubusercontent.com/MasAjie12/peko-alert-assets/main/kanan.png"),linear-gradient(135deg,#17053d,#3a0872)!important;background-size:cover,cover,112px,112px,auto!important;background-position:center,center,left bottom,right bottom,0 0!important;background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat!important;}
+.w-mile .card{box-sizing:border-box!important;position:relative!important;isolation:isolate!important;overflow:hidden!important;border:2px solid #ff2bd6!important;border-radius:16px!important;color:#fff4fc!important;background-color:#24064c!important;box-shadow:0 0 0 3px #10051f,0 0 24px rgba(255,43,214,.68),inset 0 0 24px rgba(0,213,255,.18)!important;animation:pek-mile-in .65s cubic-bezier(.2,.9,.3,1.15) both,pek-mile-glow 3.8s ease-in-out infinite!important}
+.w-mile .card::before{content:"";position:absolute;z-index:5;top:0;left:0;width:44%;height:3px;background:linear-gradient(90deg,transparent,#ffe02d,transparent);box-shadow:0 0 12px #ffe02d;animation:pek-mile-scan 3.5s linear infinite;pointer-events:none}
+.w-mile .card::after{content:"✦";position:absolute;z-index:5;right:12px;top:7px;color:#ffe02d;font-size:22px;text-shadow:0 0 12px #ff2bd6;animation:pek-mile-star 2.2s ease-in-out infinite;pointer-events:none}
+@keyframes pek-mile-in{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes pek-mile-glow{0%,100%{box-shadow:0 0 0 3px #10051f,0 0 18px rgba(255,43,214,.58),inset 0 0 18px rgba(0,213,255,.16)}50%{box-shadow:0 0 0 3px #10051f,0 0 34px rgba(255,43,214,.88),inset 0 0 28px rgba(0,213,255,.24)}}
+@keyframes pek-mile-scan{from{transform:translateX(-120%)}to{transform:translateX(340%)}}
+@keyframes pek-mile-star{0%,100%{transform:scale(.8) rotate(0);opacity:.7}50%{transform:scale(1.18) rotate(16deg);opacity:1}}
+.w-mile .card h1,.w-mile .card h2,.w-mile .card h3,.w-mile .card h4{color:#ffe02d!important;text-shadow:2px 2px 0 #10051f,0 0 12px #ff2bd6!important;font-family:Arial Black,Impact,'Trebuchet MS',sans-serif!important}
+.w-mile .card p,.w-mile .card td,.w-mile .card span{font-family:'Trebuchet MS',Arial,sans-serif!important;color:#fff4fc!important}
+
+.w-mile .card,.w-mile .card-header,.w-mile .card-body{background-color:transparent!important}
+.w-mile .card .card-header{padding:14px 16px 9px!important}
+.w-mile .card-body{padding:0 20px 20px!important}
+.w-mile .progress{position:relative!important;height:16px!important;margin:10px 0 12px!important;overflow:hidden!important;border:1px solid rgba(255,224,45,.6)!important;border-radius:999px!important;background:rgba(10,3,30,.6)!important;box-shadow:0 0 12px rgba(255,43,214,.55)!important}
+.w-mile .progress-bar,.w-mile .progress-bars{height:100%!important;border-radius:999px!important;background:linear-gradient(90deg,#00d5ff,#ff2bd6,#ffe02d)!important;box-shadow:0 0 14px rgba(0,213,255,.75)!important}
+.w-mile .center_progress h4,.w-mile .center_progress h4 strong{color:#fff!important;white-space:nowrap!important}

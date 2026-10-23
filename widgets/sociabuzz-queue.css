@@ -1,0 +1,20 @@
+/* PEKO QUEUE — paste into widget CSS */
+body{background:transparent!important;margin:0!important;overflow:hidden!important;font-family:Arial Black,Impact,'Trebuchet MS',sans-serif!important}
+.w-queue .card{background-image:linear-gradient(rgba(13,3,35,.78),rgba(30,4,62,.88)),url("https://raw.githubusercontent.com/MasAjie12/peko-alert-assets/main/peko.png"),url("https://raw.githubusercontent.com/MasAjie12/peko-alert-assets/main/kiri.png"),url("https://raw.githubusercontent.com/MasAjie12/peko-alert-assets/main/kanan.png"),linear-gradient(135deg,#17053d,#3a0872)!important;background-size:cover,cover,112px,112px,auto!important;background-position:center,center,left bottom,right bottom,0 0!important;background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat!important;}
+.w-queue .card{box-sizing:border-box!important;position:relative!important;isolation:isolate!important;overflow:hidden!important;border:2px solid #ff2bd6!important;border-radius:16px!important;color:#fff4fc!important;background-color:#24064c!important;box-shadow:0 0 0 3px #10051f,0 0 24px rgba(255,43,214,.68),inset 0 0 24px rgba(0,213,255,.18)!important;animation:pek-queue-in .65s cubic-bezier(.2,.9,.3,1.15) both,pek-queue-glow 3.8s ease-in-out infinite!important}
+.w-queue .card::before{content:"";position:absolute;z-index:5;top:0;left:0;width:44%;height:3px;background:linear-gradient(90deg,transparent,#ffe02d,transparent);box-shadow:0 0 12px #ffe02d;animation:pek-queue-scan 3.5s linear infinite;pointer-events:none}
+.w-queue .card::after{content:"✦";position:absolute;z-index:5;right:12px;top:7px;color:#ffe02d;font-size:22px;text-shadow:0 0 12px #ff2bd6;animation:pek-queue-star 2.2s ease-in-out infinite;pointer-events:none}
+@keyframes pek-queue-in{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes pek-queue-glow{0%,100%{box-shadow:0 0 0 3px #10051f,0 0 18px rgba(255,43,214,.58),inset 0 0 18px rgba(0,213,255,.16)}50%{box-shadow:0 0 0 3px #10051f,0 0 34px rgba(255,43,214,.88),inset 0 0 28px rgba(0,213,255,.24)}}
+@keyframes pek-queue-scan{from{transform:translateX(-120%)}to{transform:translateX(340%)}}
+@keyframes pek-queue-star{0%,100%{transform:scale(.8) rotate(0);opacity:.7}50%{transform:scale(1.18) rotate(16deg);opacity:1}}
+.w-queue .card h1,.w-queue .card h2,.w-queue .card h3,.w-queue .card h4{color:#ffe02d!important;text-shadow:2px 2px 0 #10051f,0 0 12px #ff2bd6!important;font-family:Arial Black,Impact,'Trebuchet MS',sans-serif!important}
+.w-queue .card p,.w-queue .card td,.w-queue .card span{font-family:'Trebuchet MS',Arial,sans-serif!important;color:#fff4fc!important}
+
+.w-queue .card .card-header{padding:14px 16px 9px!important;background:transparent!important}
+.w-queue .card .show_donate{width:100%!important;border-collapse:separate!important;border-spacing:0 5px!important;margin:0!important}
+.w-queue .show_donate td{padding:7px 9px!important;border:0!important;background:rgba(10,3,30,.45)!important;font-size:14px!important}
+.w-queue .show_donate tr{opacity:0;animation:pek-queue-row .45s ease forwards}
+.w-queue .show_donate tr:nth-child(1){animation-delay:.1s}.w-queue .show_donate tr:nth-child(2){animation-delay:.2s}.w-queue .show_donate tr:nth-child(3){animation-delay:.3s}.w-queue .show_donate tr:nth-child(4){animation-delay:.4s}.w-queue .show_donate tr:nth-child(5){animation-delay:.5s}.w-queue .show_donate tr:nth-child(6){animation-delay:.6s}.w-queue .show_donate tr:nth-child(7){animation-delay:.7s}.w-queue .show_donate tr:nth-child(8){animation-delay:.8s}.w-queue .show_donate tr:nth-child(9){animation-delay:.9s}.w-queue .show_donate tr:nth-child(10){animation-delay:1s}
+@keyframes pek-queue-row{from{opacity:0;transform:translateX(-14px)}to{opacity:1;transform:translateX(0)}}
+.w-queue .show_donate td:first-child{width:30px;color:#ffe02d!important;font-weight:900!important;text-align:center}.w-queue .show_donate .text-limit-r{color:#00d5ff!important;font-weight:800!important;text-align:right;white-space:nowrap!important}
